@@ -1,6 +1,6 @@
-declare class ExamplePlugin {
-    print(text: string): void;
+declare class MyPlugin {
+    helloWorld(): void;
     timeout(dur: number): Promise<{}>;
 }
-declare const _default: ExamplePlugin;
+declare const _default: MyPlugin;
 export default _default;

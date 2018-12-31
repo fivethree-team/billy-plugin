@@ -1,10 +1,10 @@
 import { Plugin, Action } from '@fivethree/billy-core';
-@Plugin('billy-plugin-example')
-class ExamplePlugin {
+@Plugin('my-plugin')
+class MyPlugin {
 
-    @Action('print')
-    print(text: string) {
-        console.log(text);
+    @Action('Hello World')
+    helloWorld() {
+        console.log('hello world');
     }
 
     @Action('timeout')
@@ -20,4 +20,4 @@ class ExamplePlugin {
 
 }
 
-export default new ExamplePlugin();
+export default new MyPlugin();

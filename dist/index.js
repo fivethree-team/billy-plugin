@@ -42,13 +42,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var billy_core_1 = require("@fivethree/billy-core");
-var ExamplePlugin = /** @class */ (function () {
-    function ExamplePlugin() {
+var MyPlugin = /** @class */ (function () {
+    function MyPlugin() {
     }
-    ExamplePlugin.prototype.print = function (text) {
-        console.log(text);
+    MyPlugin.prototype.helloWorld = function () {
+        console.log('hello world');
     };
-    ExamplePlugin.prototype.timeout = function (dur) {
+    MyPlugin.prototype.timeout = function (dur) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 console.log("wait for " + dur + "ms!");
@@ -62,14 +62,14 @@ var ExamplePlugin = /** @class */ (function () {
         });
     };
     __decorate([
-        billy_core_1.Action('print')
-    ], ExamplePlugin.prototype, "print", null);
+        billy_core_1.Action('Hello World')
+    ], MyPlugin.prototype, "helloWorld", null);
     __decorate([
         billy_core_1.Action('timeout')
-    ], ExamplePlugin.prototype, "timeout", null);
-    ExamplePlugin = __decorate([
-        billy_core_1.Plugin('billy-plugin-example')
-    ], ExamplePlugin);
-    return ExamplePlugin;
+    ], MyPlugin.prototype, "timeout", null);
+    MyPlugin = __decorate([
+        billy_core_1.Plugin('my-plugin')
+    ], MyPlugin);
+    return MyPlugin;
 }());
-exports.default = new ExamplePlugin();
+exports.default = new MyPlugin();
