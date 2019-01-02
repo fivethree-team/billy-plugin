@@ -1,6 +1,6 @@
 import { Plugin, Action } from '@fivethree/billy-core';
 @Plugin('my-plugin')
-class MyPlugin {
+export default class MyPlugin {
 
     @Action('Hello World')
     helloWorld() {
@@ -19,5 +19,3 @@ class MyPlugin {
     }
 
 }
-
-export default new MyPlugin();
