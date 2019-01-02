@@ -72,4 +72,4 @@ var MyPlugin = /** @class */ (function () {
     ], MyPlugin);
     return MyPlugin;
 }());
-exports.default = new MyPlugin();
+exports.default = MyPlugin;
