@@ -1,4 +1,1 @@
-export default class MyPlugin {
-    helloWorld(): void;
-    timeout(dur: number): Promise<{}>;
-}
+export * from './plugin';
