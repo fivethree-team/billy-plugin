@@ -46,7 +46,12 @@ var MyPlugin = /** @class */ (function () {
     function MyPlugin() {
     }
     MyPlugin.prototype.helloWorld = function () {
-        console.log('hello world');
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                console.log('hello world');
+                return [2 /*return*/];
+            });
+        });
     };
     MyPlugin.prototype.timeout = function (dur) {
         return __awaiter(this, void 0, void 0, function () {
@@ -61,13 +66,30 @@ var MyPlugin = /** @class */ (function () {
             });
         });
     };
+    MyPlugin.prototype.test = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.helloWorld()];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
     __decorate([
         billy_core_1.Action('Hello World')
     ], MyPlugin.prototype, "helloWorld", null);
     __decorate([
         billy_core_1.Action('timeout')
     ], MyPlugin.prototype, "timeout", null);
+    __decorate([
+        billy_core_1.Lane('Testlane for Example Plugin')
+    ], MyPlugin.prototype, "test", null);
     MyPlugin = __decorate([
+        billy_core_1.App() // uncomment to test the plugin
+        ,
         billy_core_1.Plugin('my-plugin')
     ], MyPlugin);
     return MyPlugin;

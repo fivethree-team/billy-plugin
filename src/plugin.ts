@@ -1,9 +1,10 @@
-import { Plugin, Action } from '@fivethree/billy-core';
+import { Plugin, Action} from '@fivethree/billy-core';
+// @App() // uncomment to test the plugin
 @Plugin('my-plugin')
 export class MyPlugin {
 
     @Action('Hello World')
-    helloWorld() {
+    async helloWorld() {
         console.log('hello world');
     }
 
