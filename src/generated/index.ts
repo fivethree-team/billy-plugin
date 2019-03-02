@@ -1,1 +1,0 @@
-export { MyPlugin } from "../plugin";
