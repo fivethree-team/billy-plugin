@@ -2,6 +2,10 @@
     "name": "@fivethree/billy-plugin-example",
     "version": "0.10.0",
     "description": "example plugin for billy - your personal cli assistant.",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/fivethree-team/billy-plugin"
+      },
     "main": "dist/index.js",
     "scripts": {
         "build": "node_modules/.bin/tsc -p .",
@@ -17,7 +21,7 @@
     "author": "garygrossgarten",
     "license": "MIT",
     "devDependencies": {
-        "@fivethree/billy-core": "0.10.0",
+        "@fivethree/billy-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core",
         "@types/node": "^10.12.18",
         "nodemon": "^1.18.9",
         "ts-node": "^7.0.1",
