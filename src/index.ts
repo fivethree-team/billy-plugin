@@ -1,5 +1,5 @@
 import { Plugin, Action} from '@fivethree/billy-core';
-@Plugin('my-plugin')
+@Plugin('my-plugin description')
 export class MyPlugin {
 
     @Action('timeout')

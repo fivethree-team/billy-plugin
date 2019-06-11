@@ -62,7 +62,7 @@ var MyPlugin = /** @class */ (function () {
         billy_core_1.Action('timeout')
     ], MyPlugin.prototype, "timeout", null);
     MyPlugin = __decorate([
-        billy_core_1.Plugin('my-plugin')
+        billy_core_1.Plugin('my-plugin description')
     ], MyPlugin);
     return MyPlugin;
 }());

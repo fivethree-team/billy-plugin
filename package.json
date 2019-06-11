@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-plugin-example",
-    "version": "0.12.3",
+    "version": "0.12.5",
     "description": "example plugin for billy - your personal cli assistant.",
     "repository": {
         "type": "git",
@@ -18,10 +18,10 @@
         "node",
         "terminal"
     ],
-    "author": "garygrossgarten",
+    "author": "fivethree",
     "license": "MIT",
     "devDependencies": {
-        "@fivethree/billy-core": "0.12.3",
+        "@fivethree/billy-core": "0.12.5",
         "@types/node": "^10.12.18",
         "nodemon": "^1.18.9",
         "ts-node": "^7.0.1",
